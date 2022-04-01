@@ -50,3 +50,5 @@ JNIEXPORT jint JNICALL Java_InteropJNI_JNI_Summary(JNIEnv* jenv, jobject jobj, i
 	return a + b;
 }
 ```
+Билдим его и получаем .dll файл, который успешно отправляется в ...\user\.jdks\openjdk-17.0.2\bin \
+После чего можно работать в java с плюсовым кодом.
