@@ -68,6 +68,10 @@ extern "C"
 ```cs
 [DllImport("TestLib.dll", CallingConvention = CallingConvention.Cdecl)]
 ```
+Также подключим Dll библиотеку 
+```cs
+using System.Runtime.InteropServices;
+```
 ### Сложности интеропа:
 Много лишних дополнительных действий (генерация .h и .dll) \
 Необходимость переименовывания оригинальных методов на интеропящемся языке. \
