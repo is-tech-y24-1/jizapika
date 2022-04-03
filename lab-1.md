@@ -53,7 +53,21 @@ JNIEXPORT jint JNICALL Java_InteropJNI_JNI_Summary(JNIEnv* jenv, jobject jobj, i
 Билдим его и получаем .dll файл, который успешно отправляется в ...\user\.jdks\openjdk-17.0.2\bin \
 После чего можно работать в java с плюсовым кодом.
 ### C#
-
+Для C# всё намного проще: мы также создаём Dll проект, но достаточно будет просто добавить вконце main.cpp такой код:
+```cpp
+#include <stdio.h>
+extern "C"
+{
+  int __declspec(dllexport) CppSum (int first, int second)
+  {
+    return a + b;
+  }
+}
+```
+И билдим его. Далее полученный .dll добавляем в проект шарпов и вызываем любой метод при помощи такой инструкции:
+```cs
+[DllImport("TestLib.dll", CallingConvention = CallingConvention.Cdecl)]
+```
 ### Сложности интеропа:
 Много лишних дополнительных действий (генерация .h и .dll) \
 Необходимость переименовывания оригинальных методов на интеропящемся языке. \
