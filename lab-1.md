@@ -53,25 +53,35 @@ JNIEXPORT jint JNICALL Java_InteropJNI_JNI_Summary(JNIEnv* jenv, jobject jobj, i
 Билдим его и получаем .dll файл, который успешно отправляется в ...\user\.jdks\openjdk-17.0.2\bin \
 После чего можно работать в java с плюсовым кодом.
 ### C#
-Для C# всё намного проще: мы также создаём Dll проект, но достаточно будет просто добавить вконце main.cpp такой код:
+Для C# всё по-другому: мы также создаём Dll проект, но достаточно будет просто добавить вконце main.cpp такой код:
 ```cpp
 #include <stdio.h>
-extern "C"
+int __declspec(dllexport) CppSum (int first, int second)
 {
-  int __declspec(dllexport) CppSum (int first, int second)
-  {
     return a + b;
-  }
 }
 ```
-И билдим его. Далее полученный .dll добавляем в проект шарпов и вызываем любой метод при помощи такой инструкции:
-```cs
-[DllImport("TestLib.dll", CallingConvention = CallingConvention.Cdecl)]
+И в main.h добавить определение функции:
+```cpp
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+    int __declspec(dllexport) Summary(int first, int second);
+
+#ifdef __cplusplus
+}
 ```
-Также подключим Dll библиотеку 
+И билдим его. Далее создаём код на C#, предварительно перед каждой функцией добавляя такую инструкцию: 
+```cs
+[DllImport("DllForCSCppSum.dll", CallingConvention = CallingConvention.Cdecl)]
+```
+Также не забываем подключить Dll библиотеку 
 ```cs
 using System.Runtime.InteropServices;
 ```
+Осталось разместить сгенерированный .dll в проекте C#. Для этого мы компилируем написанный код, и в той папке, где сгенерировался наш .exe, размещаем .dll \
+В моём случае адрес такой: ...\CSForInterop\bin\Debug\net5.0
 ### Сложности интеропа:
 Много лишних дополнительных действий (генерация .h и .dll) \
 Необходимость переименовывания оригинальных методов на интеропящемся языке. \
