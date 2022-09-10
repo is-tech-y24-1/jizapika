@@ -193,3 +193,103 @@ static ComputationalExpressions()
 Проблем с использованием прописанного кода на соответствующих языках не возникло.
 Единственное, что могу сказать, это то, что для C# требуется создавать новый проект, который может обращаться к F#, предварительно добавляя ссылку на F# Project.
 Ссылка добавляется путём нажатия правой кнопки мыши на поле класса в Rider, далее Add и Add Reference...
+
+## 3. Написать алгоритм обхода графа (DFS и BFS) на языке Java, собрать в пакет и опубликовать (хоть в Maven, хоть в Gradle, не имеет значения). Использовать в другом проекте на Java/Scala этот пакет. Повторить это с C#/F#. В отчёте написать про алгоритм работы пакетных менеджеров, особенности их работы в C# и Java мирах.
+Реализация алгоритма на Java:
+```java
+import java.util.*;
+
+public class Graph {
+    private int n;
+    private List<List<Integer>> graph;
+
+    public Graph(int n) {
+        this.n = n;
+        graph = new ArrayList<>(n);
+    }
+
+    public void addEdge(int from, int to) {
+        graph.get(from).add(to);
+    }
+
+    public boolean[] bfs(int vertex) {
+        boolean[] isVisited = new boolean[n];
+        Queue queue = new LinkedList();
+        queue.add(vertex);
+        while(!queue.isEmpty()) {
+            int node = (int)queue.remove();
+            isVisited[node] = true;
+            for (int neighbour: graph.get(vertex)) {
+                if (!isVisited[neighbour])
+                    queue.add(neighbour);
+            }
+        }
+        return isVisited;
+    }
+
+    public boolean[] dfs(int vertex) {
+        boolean[] isVisited = new boolean[n];
+        dfsRecursive(vertex, isVisited);
+        return isVisited;
+    }
+
+    private void dfsRecursive(int vertex, boolean[] isVisited) {
+        for (int neighbour: graph.get(vertex)) {
+            if (!isVisited[neighbour])
+                dfsRecursive(neighbour, isVisited);
+        }
+    }
+}
+```
+
+
+Реализация алгоритма на C#:
+```cs
+namespace CSGraph;
+
+public class Graph
+{
+    private int _n;
+    private readonly List<List<int>> _graph;
+
+    public Graph(int n)
+    {
+        _n = n;
+        _graph = new List<List<int>>(n);
+    }
+    
+    public void AddEdge(int from, int to) {
+        _graph[from].Add(to);
+    }
+
+    public bool[] Bfs(int vertex) {
+        var isVisited = new bool[_n];
+        var queue = new Queue<int>();
+        queue.Enqueue(vertex);
+        while(queue.Count > 0) {
+            var node = queue.Peek();
+            queue.Dequeue();
+            isVisited[node] = true;
+            foreach (var neighbour in _graph[vertex].Where(neighbour => !isVisited[neighbour]))
+            {
+                queue.Enqueue(neighbour);
+            }
+        }
+        return isVisited;
+    }
+
+    public bool[] Dfs(int vertex) {
+        var isVisited = new bool[_n];
+        DfsRecursive(vertex, isVisited);
+        return isVisited;
+    }
+
+    private void DfsRecursive(int vertex, IReadOnlyList<bool> isVisited)
+    {
+        foreach (var neighbour in _graph[vertex].Where(neighbour => !isVisited[neighbour]))
+        {
+            DfsRecursive(neighbour, isVisited);
+        }
+    }
+}
+```
