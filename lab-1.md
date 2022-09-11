@@ -241,6 +241,15 @@ public class Graph {
     }
 }
 ```
+Заранее подготовим Main.java с методом main для генерации .jar, расположив его в одной папке с Graph.java
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+```
+Создадим Maven-проект и запакетируем библиотеку в jar-файл при помощи раздела File -> ProjectStructure -> Artifacts -> Add(+) -> JAR -> From modules with dependencies. Далее билдим созданный артифакт. Полученный jar должен лежать в директории out.
 
 
 Реализация алгоритма на C#:
@@ -293,3 +302,8 @@ public class Graph
     }
 }
 ```
+В C# необходимо нажать ПКМ на проект и выбрать Properties > NuGet, где мы можем настроить всю информацию о будущем пакете. \
+Далее в cmd переходим в папку проекта и пишем: dotnet pack \
+Должен сформироваться файл ./bin/Debug/CSGraph.1.0.0.nupkg \
+Далее мы создаём новый проект и меняем Solution на Assemblies, чтобы можно было добавить запакетированную сборку. \
+Нажимаем на Open... и выбираем сформированный .nupkg файл
