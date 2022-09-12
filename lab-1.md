@@ -315,3 +315,102 @@ public class Graph
 Далее мы создаём новый проект, заходим в NuGet -> Packages, и скачиваем выложенный пакет.
 
 ## 4. Изучить инструменты для оценки производительности в C# и Java. Написать несколько алгоритмов сортировок (и взять стандартную) и запустить бенчмарки (в бенчмарках помимо времени выполнения проверить аллокации памяти). В отчёт написать про инструменты для бенчмаркинга, их особености, анализ результатов проверок.
+### С#
+В C# есть библиотека BenchmarkDotNet, которую необходимо использовать для анализа работы.
+Sorter.cs
+```cs
+namespace CSSorter;
+
+public class Sorter
+{
+    public static void bubbleSort(List<int> list) {
+        for (int i = 0; i < list.Count; i++) {
+            for (int j = i; j < list.Count; j++) {
+                if (list[i] > list[j]) {
+                    swap(list[i], list[j]);
+                }
+            }
+        }
+    }
+
+    public static void mergeSort(List<int> list, int l, int r) {
+        if (list.Count <= r || l >= r) return;
+        int m = (l + r) / 2;
+        mergeSort(list, l, m);
+        mergeSort(list, m + 1, r);
+        var newList = new List<int>();
+        for (int i = l, j = m + 1; i <= m || j <= r; ) {
+            if (i == m+1) newList.Add(list[j++]);
+            else if (j == r+1) newList.Add(list[i++]);
+            else if (list[j] < list[i]) newList.Add(list[j++]);
+            else newList.Add(list[i++]);;
+        }
+
+        for (int i = 0; i < newList.Count; i++)
+            list[l + i] = newList[i];
+    }
+
+    public static void standardSort(List<int> list) {
+        list.Sort();
+    }
+
+    private static void swap(int a, int b) {
+        int t = a;
+        a = b;
+        b = t;
+    }
+}
+```
+BenchmarkSorter.cs
+```cs
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Order;
+namespace CSSorter;
+
+[MemoryDiagnoser]
+[Orderer(SummaryOrderPolicy.FastestToSlowest)]
+[RankColumn]
+public class BenchmarkSorter
+{
+    private List<int> _list;
+
+    public BenchmarkSorter()
+    {
+        var random = new Random();
+        const int n = 10000;
+        _list = new List<int>();
+        for (var i = 0; i < n; i++)
+        {
+            _list.Add(random.Next());
+        }
+    }
+
+    [Benchmark]
+    public void bubbleSort()
+    {
+        var list = new List<int>(_list);
+        Sorter.bubbleSort(list);
+    }
+    
+    [Benchmark]
+    public void mergeSort()
+    {
+        var list = new List<int>(_list);
+        Sorter.mergeSort(list, 0, list.Count - 1);
+    }
+
+    [Benchmark]
+    public void standardSort()
+    {
+        var list = new List<int>(_list);
+        Sorter.standardSort(list);
+    }
+}
+```
+Соберём проект (перейдём в папку с проектом в cmd и запустим dotnet build -c Release). \
+Далее запустим сгенерированный .dll, запустив тем самым описанный benchmark (dotnet bin\Release\net6.0\CSSorter.dll)
+|       Method |       Mean |     Error |    StdDev | Rank |      Gen0 |    Gen1 |  Allocated |
+|------------- |-----------:|----------:|----------:|-----:|----------:|--------:|-----------:|
+| standardSort |   1.250 ms | 0.0133 ms | 0.0118 ms |    1 |   37.1094 |       - |   39.12 KB |
+|    mergeSort |   9.223 ms | 0.1248 ms | 0.1167 ms |    2 | 2171.8750 | 62.5000 | 2328.76 KB |
+|   bubbleSort | 585.546 ms | 4.7382 ms | 4.4322 ms |    3 |         - |       - |   39.59 KB |
