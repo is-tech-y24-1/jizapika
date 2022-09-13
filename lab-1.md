@@ -414,3 +414,132 @@ public class BenchmarkSorter
 | standardSort |   1.250 ms | 0.0133 ms | 0.0118 ms |    1 |   37.1094 |       - |   39.12 KB |
 |    mergeSort |   9.223 ms | 0.1248 ms | 0.1167 ms |    2 | 2171.8750 | 62.5000 | 2328.76 KB |
 |   bubbleSort | 585.546 ms | 4.7382 ms | 4.4322 ms |    3 |         - |       - |   39.59 KB |
+
+### Java
+Чтобы провести диагностику ресурсов в Java, необходимо в pom.xml с помощью dependencies описать зависимости с плагином JMH.
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-core</artifactId>
+        <version>1.33</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-generator-annprocess</artifactId>
+        <version>1.33</version>
+    </dependency>
+</dependencies>
+```
+Далее делаем Maven -> Reload Project и наши зависимости определяются. \
+Пропишем классы и запустим Benchmark. \
+Sorter.java
+```java
+package org.example;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Sorter {
+
+    public static void bubbleSort(List<Integer> list) {
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = i; j < list.size(); j++) {
+                if (list.get(i) > list.get(j)) {
+                    Integer t = list.get(i);
+                    list.set(i, list.get(j));
+                    list.set(j, t);
+                }
+            }
+        }
+    }
+
+    public static void mergeSort(List<Integer> list, int l, int r) {
+        if (list.size() <= r || l >= r) return;
+        int m = (l + r) / 2;
+        mergeSort(list, l, m);
+        mergeSort(list, m + 1, r);
+        List<Integer> newList = new ArrayList<>();
+        for (int i = l, j = m + 1; i <= m || j <= r; ) {
+            if (i == m + 1) newList.add(list.get(j++));
+            else if (j == r + 1) newList.add(list.get(i++));
+            else if (list.get(j) < list.get(i)) newList.add(list.get(j++));
+            else newList.add(list.get(i++));
+        }
+
+        for (int i = 0; i < newList.size(); i++)
+            list.set(l + i, newList.get(i));
+    }
+
+    public static void standardSort(List<Integer> list) {
+        Collections.sort(list);
+    }
+}
+```
+BenchmarkSorter.java
+```java
+package org.example;
+
+import org.openjdk.jmh.annotations.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+@State(Scope.Benchmark)
+@Fork(value = 1)
+@Warmup(iterations = 2)
+@Measurement(iterations = 2)
+@BenchmarkMode(Mode.All)
+public class BenchmarkSorter
+{
+    private List<Integer> list;
+
+    @Setup
+    public void setUp() {
+        var random = new Random();
+        int n = 10000;
+        list = new ArrayList<Integer>();
+        for (var i = 0; i < n; i++)
+        {
+            list.add(random.nextInt());
+        }
+    }
+
+    @Benchmark
+    public void bubbleSort() {
+        var newList = new ArrayList<Integer>(list);
+        Sorter.bubbleSort(newList);
+    }
+
+    @Benchmark
+    public void mergeSort() {
+        var newList = new ArrayList<Integer>(list);
+        Sorter.mergeSort(newList, 0, newList.size() - 1);
+    }
+
+    @Benchmark
+    public void standardSort() {
+        var newList = new ArrayList<Integer>(list);
+        Sorter.standardSort(list);
+    }
+}
+```
+Main.java
+```java
+package org.example;
+
+public class Main {
+    public static void main(String[] args) {
+    }
+}
+```
+|    Benchmark                 |       Mode |     Cnt   |    Score  |     Units |
+|----------------------------- |-----------:|----------:|----------:|----------:|
+| BenchmarkSorter.bubbleSort   |   thrpt    |     2     |     0,571 |  ops/s    |
+| BenchmarkSorter.mergeSort    |   thrpt    |  2        |    85,662 |  ops/s    |
+| BenchmarkSorter.standardSort |   thrpt    |  2        |  9992,802 |  ops/s    |
+| BenchmarkSorter.bubbleSort   |   avgt     |  2        |     1,755 |  s/op     |
+| BenchmarkSorter.mergeSort    |   avgt     |  2        |     0,012 |  s/op     |
+| BenchmarkSorter.standardSort |   avgt     |  2        |    ≈ 10⁻⁴ |  s/op     |
