@@ -543,3 +543,52 @@ public class Main {
 | BenchmarkSorter.bubbleSort   |   avgt     |  2        |     1,755 |  s/op     |
 | BenchmarkSorter.mergeSort    |   avgt     |  2        |     0,012 |  s/op     |
 | BenchmarkSorter.standardSort |   avgt     |  2        |    ≈ 10⁻⁴ |  s/op     |
+
+## 5. Используя инструменты dotTrace, dotMemory, всё-что-угодно-хоть-windbg, проанализировать работу написанного кода для бекапов. Необходимо написать сценарий, когда в цикле будет выполняться много запусков, будут создаваться и удаляться точки. Проверить два сценария: с реальной работой с файловой системой и без неё. В отчёте неоходимо проанализировать полученные результаты, сделать вывод о написанном коде. Опционально: предложить варианты по модернизации или написать альтернативную имплементацию.
+Для анализа работы создадим проект, который запустим в JetBrains DotMemory. Перед этим запакетируем 3 лабу по ООП (бэкапы) и откроем её в новом проекте. \
+Опишем такой класс:
+```cs
+using Backups.Services;
+using Backups.Tools.Repository;
+using Backups.Tools.StorageAlgorithm;
+
+namespace BackUpsAnalyser
+{
+    internal static class Program
+    {
+        private static void Main()
+        {
+            var dataStorage = Path.Combine(
+                Path.Combine(
+                    Directory.GetParent(Directory.GetCurrentDirectory())?
+                        .Parent?
+                        .FullName!),
+                "Data");
+            while (true)
+            {
+                var service = new BackUpJob(new AbstractFileSystem(), new SingleStorage(), "BackUp");
+                service.AddJobObject("C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\1 laba\\5task\\picture1.bmp");
+                service.AddJobObject("C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\1 laba\\5task\\picture2.bmp");
+                service.AddJobObject("C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\1 laba\\5task\\picture3.bmp");
+                service.MakeRestorePoint();
+                service.MakeRestorePoint();
+                service.MakeRestorePoint();
+                service.MakeRestorePoint();
+               // Directory.Delete(Path.Combine(dataStorage, "BackUp"), true);
+            }
+        }
+    }
+}
+```
+Далее забилдим проект, скачаем приложение DotMemory и занесём туда .exe из папки bin \
+После протестим для настоящей ФС и для фейковой и сравним результаты.
+[Local file system](https://github.com/is-tech-y24-1/jizapika/blob/lab-1/изображение_2022-09-14_015251113.png)
+
+![](https://github.com/is-tech-y24-1/jizapika/blob/lab-1/изображение_2022-09-14_015251113.png)
+
+- [Abstract file system](https://github.com/is-tech-y24-1/jizapika/blob/lab-1/изображение_2022-09-14_015707049.png)
+
+![](https://github.com/is-tech-y24-1/jizapika/blob/lab-1/изображение_2022-09-14_015707049.png)
+
+Зубчики получаются, потому что память периодически подчищается и сборщик мусора удаляет объекты, на которые никто не ссылается. \
+У абстрактной зубчики узже, потому что проходит меньше времени на выделение критической памяти, т.к. не требуется нагружать и перетаскивать реальные файлы, то есть всё время работы затрачено на выделение памяти в пределах программы.
