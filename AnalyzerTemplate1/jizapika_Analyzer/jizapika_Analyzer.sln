@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jizapika_Analyzer", "jizapika_Analyzer\jizapika_Analyzer.csproj", "{D0049B92-C75C-4592-BF73-380CF4B5D8B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jizapika_Analyzer.CodeFixes", "jizapika_Analyzer.CodeFixes\jizapika_Analyzer.CodeFixes.csproj", "{66CD1956-8291-4208-AAF8-6C86BD447EF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jizapika_Analyzer.Package", "jizapika_Analyzer.Package\jizapika_Analyzer.Package.csproj", "{8BABBD58-92EA-4299-9401-C853B079FAC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jizapika_Analyzer.Test", "jizapika_Analyzer.Test\jizapika_Analyzer.Test.csproj", "{6076CB92-F70B-47B3-AC8C-00B6D3047DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jizapika_Analyzer.Vsix", "jizapika_Analyzer.Vsix\jizapika_Analyzer.Vsix.csproj", "{609D10B8-56B9-485A-AF37-4232241117BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0049B92-C75C-4592-BF73-380CF4B5D8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0049B92-C75C-4592-BF73-380CF4B5D8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0049B92-C75C-4592-BF73-380CF4B5D8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0049B92-C75C-4592-BF73-380CF4B5D8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CD1956-8291-4208-AAF8-6C86BD447EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CD1956-8291-4208-AAF8-6C86BD447EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CD1956-8291-4208-AAF8-6C86BD447EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CD1956-8291-4208-AAF8-6C86BD447EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BABBD58-92EA-4299-9401-C853B079FAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BABBD58-92EA-4299-9401-C853B079FAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BABBD58-92EA-4299-9401-C853B079FAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BABBD58-92EA-4299-9401-C853B079FAC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6076CB92-F70B-47B3-AC8C-00B6D3047DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6076CB92-F70B-47B3-AC8C-00B6D3047DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6076CB92-F70B-47B3-AC8C-00B6D3047DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6076CB92-F70B-47B3-AC8C-00B6D3047DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609D10B8-56B9-485A-AF37-4232241117BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609D10B8-56B9-485A-AF37-4232241117BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609D10B8-56B9-485A-AF37-4232241117BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609D10B8-56B9-485A-AF37-4232241117BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F95C390-6385-4C21-9A84-8621F77591E6}
+	EndGlobalSection
+EndGlobal

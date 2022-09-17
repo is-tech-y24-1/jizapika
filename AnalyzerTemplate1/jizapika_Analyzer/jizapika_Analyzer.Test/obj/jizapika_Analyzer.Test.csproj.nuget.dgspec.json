@@ -1,0 +1,248 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.Test\\jizapika_Analyzer.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.CodeFixes\\jizapika_Analyzer.CodeFixes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.CodeFixes\\jizapika_Analyzer.CodeFixes.csproj",
+        "projectName": "jizapika_Analyzer.CodeFixes",
+        "projectPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.CodeFixes\\jizapika_Analyzer.CodeFixes.csproj",
+        "packagesPath": "C:\\Users\\Татьяна\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.CodeFixes\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Татьяна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\1 laba\\3task\\CSGraph\\CSGraph\\bin\\Debug": {},
+          "C:\\Users\\Татьяна\\ITMO-IS24-INFO\\3 semester\\Object-oriented programming\\solutions\\Backups\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer\\jizapika_Analyzer.csproj": {
+                "projectPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer\\jizapika_Analyzer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.Test\\jizapika_Analyzer.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.Test\\jizapika_Analyzer.Test.csproj",
+        "projectName": "jizapika_Analyzer.Test",
+        "projectPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.Test\\jizapika_Analyzer.Test.csproj",
+        "packagesPath": "C:\\Users\\Татьяна\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Татьяна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\1 laba\\3task\\CSGraph\\CSGraph\\bin\\Debug": {},
+          "C:\\Users\\Татьяна\\ITMO-IS24-INFO\\3 semester\\Object-oriented programming\\solutions\\Backups\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "targetAlias": "netcoreapp2.0",
+            "projectReferences": {
+              "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.CodeFixes\\jizapika_Analyzer.CodeFixes.csproj": {
+                "projectPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer.CodeFixes\\jizapika_Analyzer.CodeFixes.csproj"
+              },
+              "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer\\jizapika_Analyzer.csproj": {
+                "projectPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer\\jizapika_Analyzer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "targetAlias": "netcoreapp2.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "Microsoft.CodeAnalysis": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Analyzer.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.CodeFix.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.CodeRefactoring.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.VisualBasic.Analyzer.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.VisualBasic.CodeFix.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.VisualBasic.CodeRefactoring.Testing.MSTest": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer\\jizapika_Analyzer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer\\jizapika_Analyzer.csproj",
+        "projectName": "*jizapika_Analyzer.csproj*",
+        "projectPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer\\jizapika_Analyzer.csproj",
+        "packagesPath": "C:\\Users\\Татьяна\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\3 laba\\AnalyzerTemplate2\\jizapika_Analyzer\\jizapika_Analyzer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Татьяна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\1 laba\\3task\\CSGraph\\CSGraph\\bin\\Debug": {},
+          "C:\\Users\\Татьяна\\ITMO-IS24-INFO\\3 semester\\Object-oriented programming\\solutions\\Backups\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

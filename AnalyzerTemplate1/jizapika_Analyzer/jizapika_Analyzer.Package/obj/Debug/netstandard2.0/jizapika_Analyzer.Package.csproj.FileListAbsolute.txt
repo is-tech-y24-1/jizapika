@@ -1,0 +1,17 @@
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\tools\install.ps1
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\tools\uninstall.ps1
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\jizapika_Analyzer.Package.deps.json
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\jizapika_Analyzer.Package.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\jizapika_Analyzer.Package.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\jizapika_Analyzer.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\bin\Debug\netstandard2.0\jizapika_Analyzer.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\obj\Debug\netstandard2.0\jizapika_Analyzer.Package.csproj.AssemblyReference.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\obj\Debug\netstandard2.0\jizapika_Analyzer.Package.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\obj\Debug\netstandard2.0\jizapika_Analyzer.Package.AssemblyInfoInputs.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\obj\Debug\netstandard2.0\jizapika_Analyzer.Package.AssemblyInfo.cs
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\obj\Debug\netstandard2.0\jizapika_Analyzer.Package.csproj.CoreCompileInputs.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\obj\Debug\netstandard2.0\jizapika_Analyzer.Package.csproj.CopyComplete
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\obj\Debug\netstandard2.0\jizapika_Analyzer.Package.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate2\jizapika_Analyzer\jizapika_Analyzer.Package\obj\Debug\netstandard2.0\jizapika_Analyzer.Package.pdb

@@ -1,0 +1,15 @@
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\bin\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.deps.json
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\bin\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\bin\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\bin\Debug\netstandard2.0\jizapika_Analyzer.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\bin\Debug\netstandard2.0\jizapika_Analyzer.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.csproj.AssemblyReference.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixResources.resources
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.csproj.GenerateResource.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.AssemblyInfoInputs.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.AssemblyInfo.cs
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.csproj.CoreCompileInputs.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.csproj.CopyComplete
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\3 laba\AnalyzerTemplate4\jizapika_Analyzer\jizapika_Analyzer.CodeFixes\obj\Debug\netstandard2.0\jizapika_Analyzer.CodeFixes.pdb
