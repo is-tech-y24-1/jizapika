@@ -120,4 +120,5 @@ public class DotPopulation
 Для усложнения задачи, на пути точек в разных местах добавляются круглые препятствия разных размеров. И даже в таком случае точкам удаётся доходить до координаты (1;1).
 
 Сам полигон выглядит примерно так:
-![]()
+[Application](https://github.com/is-tech-y24-1/jizapika/blob/lab-4/11.bmp)
+![](https://github.com/is-tech-y24-1/jizapika/blob/lab-4/11.bmp)
