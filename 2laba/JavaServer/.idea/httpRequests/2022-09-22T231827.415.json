@@ -1,0 +1,6 @@
+{
+  "timestamp": "2022-09-22T20:18:26.718+00:00",
+  "status": 415,
+  "error": "Unsupported Media Type",
+  "path": "/kittens/create"
+}

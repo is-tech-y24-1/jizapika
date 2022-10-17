@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Barsik",
+    "birthday": "2014-01-01T23:28:56.782+00:00",
+    "breed": "Siberian",
+    "color": "White",
+    "ownerId": 1,
+    "friends": []
+  }
+]

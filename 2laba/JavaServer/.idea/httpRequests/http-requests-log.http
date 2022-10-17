@@ -1,0 +1,156 @@
+GET http://localhost:8080/kittens/getAll
+
+<> 2022-09-22T233336.200.json
+
+###
+
+GET http://localhost:8080/owners/getAll
+
+<> 2022-09-22T233323.200.json
+
+###
+
+POST http://localhost:8080/owners/create
+Content-Type: application/json
+
+{
+  "name" : "Meladze",
+  "birthday" : "1934-01-01T23:28:56.782Z"
+}
+
+###
+
+GET http://localhost:8080/owners/getAll
+
+<> 2022-09-22T233156.200.json
+
+###
+
+GET http://localhost:8080/owners/getAll
+
+<> 2022-09-22T232656.200.json
+
+###
+
+GET http://localhost:8080/kittens/getAll
+
+<> 2022-09-22T232444.200.json
+
+###
+
+POST http://localhost:8080/kittens/create
+Content-Type: application/json
+
+{
+"name" : "Barsik",
+"birthday" : "2014-01-01T23:28:56.782Z",
+"breed" : "Siberian",
+"color" : "White",
+"ownerId" : 1
+}
+
+###
+
+POST http://localhost:8080/kittens/create
+Content-Type: application/json
+
+{
+"name" : "Barsik",
+"birthday" : "2014-01-01T23:28:56.782Z",
+"breed" : "Siberian",
+"color" : "White",
+"ownerId" : 1
+}
+
+<> 2022-09-22T232019.500.json
+
+###
+
+POST http://localhost:8080/kittens/create
+Content-Type: application/json
+
+{
+"name" : "Barsik"
+"birthday" : "2014-01-01T23:28:56.782Z"
+"breed" : "Siberian"
+"color" : "White"
+"ownerId" : 1
+}
+
+<> 2022-09-22T231942.400.json
+
+###
+
+POST http://localhost:8080/kittens/create
+
+{
+"name" : "Barsik"
+"birthday" : "2014-01-01T23:28:56.782Z"
+"breed" : "Siberian"
+"color" : "White"
+"ownerId" : 1
+}
+
+<> 2022-09-22T231827.415.json
+
+###
+
+POST http://localhost:8080/kittens/create
+{:
+"name" : "Barsik"
+"birthday" : "2014-01-01T23:28:56.782Z"
+"breed" : "Siberian"
+"color" : "White"
+"ownerId" : 1
+}:
+
+<> 2022-09-22T231706.400.html
+
+###
+
+GET http://localhost:8080/kittens/getAll
+
+###
+
+GET http://localhost:8080/kittens/getAll
+
+<> 2022-09-22T225154.404.json
+
+###
+
+GET http://localhost:8080/kittens/getAll
+
+<> 2022-09-22T214853.404.json
+
+###
+
+GET http://0.0.0.0:8080/getAll
+
+<> 2022-09-22T213344.404.json
+
+###
+
+GET http://localhost:8080/getAll
+
+<> 2022-09-22T213328.404.json
+
+###
+
+POST http://localhost:8080/create
+
+<> 2022-09-22T210308.404.json
+
+###
+
+GET http://localhost:8080/getAll
+
+<> 2022-09-22T210247.404.json
+
+###
+
+GET http://localhost:8080/getAll
+
+<> 2022-09-22T205633.404.json
+
+###
+
