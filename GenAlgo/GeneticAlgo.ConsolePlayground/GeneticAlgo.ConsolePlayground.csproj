@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeneticAlgo.Core\GeneticAlgo.Core.csproj" />
+    <ProjectReference Include="..\GeneticAlgo.Shared\GeneticAlgo.Shared.csproj" />
+    <ProjectReference Include="..\GeneticAlgo.UIShared\GeneticAlgo.UIShared.csproj" />
+  </ItemGroup>
+
+</Project>

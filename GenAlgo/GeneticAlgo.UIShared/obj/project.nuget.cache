@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "J6UV/83ids8ABdjcqkQi/rCeqKXd+Mbf0I01DeLfzaKYb0RcjBJbVN7aXo+3/Ivb/+Pkz38oUzXnM8TQ2DHxsA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\4 laba\\GenAlgo\\GeneticAlgo.UIShared\\GeneticAlgo.UIShared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Татьяна\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\Татьяна\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\Татьяна\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

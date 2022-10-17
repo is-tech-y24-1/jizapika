@@ -1,0 +1,12 @@
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\bin\Debug\net6.0\GeneticAlgo.Shared.deps.json
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\bin\Debug\net6.0\GeneticAlgo.Shared.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\bin\Debug\net6.0\GeneticAlgo.Shared.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\GeneticAlgo.Shared.csproj.AssemblyReference.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\GeneticAlgo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\GeneticAlgo.Shared.AssemblyInfoInputs.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\GeneticAlgo.Shared.AssemblyInfo.cs
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\GeneticAlgo.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\GeneticAlgo.Shared.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\refint\GeneticAlgo.Shared.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\GeneticAlgo.Shared.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Shared\obj\Debug\net6.0\ref\GeneticAlgo.Shared.dll

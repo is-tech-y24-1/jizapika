@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XOt292mc4+SGGl69XpgLfFlvsSuDd/VEFhtzgEKGcpRVZrhRjpH+dzVpCs/udL4Kx3weseNmujEkQP0w7kvkDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Татьяна\\Desktop\\учёба\\Программирование\\4 сем - Техи\\4 laba\\GenAlgo\\GeneticAlgo.Shared\\GeneticAlgo.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Татьяна\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\Татьяна\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

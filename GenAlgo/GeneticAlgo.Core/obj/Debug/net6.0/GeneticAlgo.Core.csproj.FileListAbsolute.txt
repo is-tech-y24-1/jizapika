@@ -1,0 +1,15 @@
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\bin\Debug\net6.0\GeneticAlgo.Core.deps.json
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\bin\Debug\net6.0\GeneticAlgo.Core.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\bin\Debug\net6.0\GeneticAlgo.Core.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\bin\Debug\net6.0\GeneticAlgo.Shared.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\bin\Debug\net6.0\GeneticAlgo.Shared.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\GeneticAlgo.Core.csproj.AssemblyReference.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\GeneticAlgo.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\GeneticAlgo.Core.AssemblyInfoInputs.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\GeneticAlgo.Core.AssemblyInfo.cs
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\GeneticAlgo.Core.csproj.CoreCompileInputs.cache
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\GeneticAlgo.Core.csproj.CopyComplete
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\GeneticAlgo.Core.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\refint\GeneticAlgo.Core.dll
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\GeneticAlgo.Core.pdb
+C:\Users\Татьяна\Desktop\учёба\Программирование\4 сем - Техи\4 laba\GenAlgo\GeneticAlgo.Core\obj\Debug\net6.0\ref\GeneticAlgo.Core.dll
